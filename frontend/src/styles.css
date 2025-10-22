@@ -1,0 +1,127 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #101017;
+  color: #f5f6fb;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0b0b16 0%, #151525 100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: min(900px, 90%);
+  min-height: 90vh;
+  padding: 2rem 2.5rem;
+  background: rgba(8, 8, 18, 0.85);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.teleprompter {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: rgba(20, 20, 35, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.teleprompter.answer {
+  background: rgba(30, 30, 45, 0.85);
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.teleprompter-text {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.4;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.teleprompter-text.highlight {
+  color: #8be9fd;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.25rem;
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.start {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  color: #031f0a;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.35);
+}
+
+button.stop {
+  background: linear-gradient(135deg, #fb7185, #f43f5e);
+  color: #2a0207;
+  box-shadow: 0 10px 30px rgba(244, 63, 94, 0.35);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
