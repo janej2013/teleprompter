@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Tell me about yourself.",
+    "answer": "I'm a product-focused engineer with experience building real-time multimedia applications. I enjoy translating user pain points into fast, reliable software that feels effortless to use."
+  },
+  {
+    "question": "What is your greatest strength?",
+    "answer": "My greatest strength is rapidly prototyping complex systems while keeping the UX approachable. I collaborate closely with design and product partners so we can iterate on real feedback early."
+  },
+  {
+    "question": "Can you describe a challenging project you worked on?",
+    "answer": "I led a cross-functional team to launch a live transcription tool for hybrid meetings. We integrated streaming speech recognition, speaker detection, and collaborative note taking under tight latency requirements."
+  },
+  {
+    "question": "How do you handle tight deadlines?",
+    "answer": "I clarify the goal, map out the must-haves, and communicate trade-offs clearly. Then I sequence the work so we have usable milestones early, making it easier to adapt if scope or priorities shift."
+  },
+  {
+    "question": "Why are you interested in this role?",
+    "answer": "This role combines real-time AI, communication, and thoughtful UX—all areas where I love to experiment and ship. I'm excited by the chance to help people tell their stories more confidently."
+  }
+]
